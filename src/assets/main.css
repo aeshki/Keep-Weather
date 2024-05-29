@@ -1,0 +1,34 @@
+@tailwind base;
+
+@layer base {
+    #app {
+        @apply h-dvh p-6 flex flex-col gap-4
+    }
+
+    body {
+        @apply text-base text-[#101010] bg-white h-dvh;
+        font-family: "Verdana", sans-serif;
+    }
+
+    img {
+        @apply select-none pointer-events-none;
+    }
+
+    svg {
+        @apply select-none;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .flex-center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trans-2 {
+        transition: .2s;
+    }
+}
